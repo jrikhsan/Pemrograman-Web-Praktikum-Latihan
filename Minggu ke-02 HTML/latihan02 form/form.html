@@ -1,0 +1,94 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Latihan HTML Form</title>
+	</head>
+	
+	<style>
+	tr,td {
+    padding: 5px;
+	}
+	</style>
+	
+	<body>
+	<fieldset>
+		<legend><b>Form Biodata HMSISFO</b></legend>
+		<form name = "fbiomhs" action = "form.php" target="_blank" method = "POST">
+			<table padding=5px>
+				<tr>
+					<td>Nama</td>
+					<td><input type = "text" name = "fnama" placeholder="Nama lengkap..."></td>
+				</tr>
+				<tr>
+					<td>NIM</td>
+					<td><input type = "text" name = "fnim"></td>
+				</tr>
+				<tr>
+					<td>Tgl Lahir</td>
+					<td><input type = "date" name = "ftgllahir"></td>
+				</tr>
+				<tr>
+					<td>Jenis Kelamin</td>
+					<td><input type = "radio" name = "fjk" value="l" checked> Laki-Laki
+					<input type = "radio" name = "fjk" value="p"> Perempuan</td>
+				</tr>
+				<tr>
+					<td>Semester</td>
+					<td><input type = "number" name = "fsks" min="1" max="4"></td>
+				</tr>
+				<tr>
+					<td>Jumlah SKS</td>
+					<td><input type = "number" name = "fsks" min="2" max="96"></td>
+				</tr>
+				<tr>
+					<td>Agama</td>
+					<td>
+					<select name = "fagama">
+						<option value = "isl">Islam</option>
+						<option value = "kri">Kristen</option>
+						<option value = "kat">Katholik</option>
+						<option value = "hin">Hindu</option>
+						<option value = "bud">Budha</option>
+					<select>
+					</td>
+				</tr>
+				<tr>
+					<td>Hobi</td>
+					<td>
+					<select multiple name = "fhobi">
+						<option value = "fbaca">baca</option>
+						<option value = "fnonton">nonton</option>
+						<option value = "folahraga">olahraga</option>
+						<option value = "fmasak">masak</option>
+						<option value = "frebahan">rebahan</option>
+					<select>
+					</td>
+				</tr>
+				<tr>
+					<td>Peminatan</td>
+					<td>
+					<input list="peminatan" name="Peminatan">
+						<datalist id="peminatan">
+						<option value="frontend">FrontEnd</option>
+						<option value="backend">BackEnd</option>
+						<option value="DS">DataScientist</option>
+						<option value="androdev">Android Dev</option>
+						<option value="iosdev">iOS Dev</option>
+						</datalist>
+					</td>
+				</tr>
+				<tr>
+					<td><label>Bio</label>
+					</td>
+					<td><textarea name="biografi" placeholder="deskripsikan diri anda..."></textarea>
+					</td>
+				</tr>
+			</table>
+		</form>
+		</fieldset>
+			<p>
+			<input type = "submit" name = "fsubmit" value = "Kirim">
+			</p>
+			<button type="button" onclick="alert('Latihan HTML Form Biodata HMSISFO')">Info</button>
+	</body>
+</html>

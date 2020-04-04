@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Latihan Layout CSS</title>
+</head>
+<style>
+.container {
+	width: 800px;
+	height: 365px;
+	margin: auto;
+	border: solid 1px black;
+}
+
+.container header {
+	background-color: black;
+	color: white;
+	font-size: 50px;
+	text-align: center;
+	height: 70px;
+	padding: 30px;
+    font-variant: small-caps;
+}
+
+.container nav {
+	float: left;
+	height: 200px;
+    border-right-style: solid;
+	border-width: 1px;
+}
+
+.container nav ul {
+	padding-left: 10px;
+}
+
+.container nav ul li {
+	color: blue;
+	list-style: none;
+	margin-right: 70px;
+	text-align: start;
+}
+
+.container article {
+    margin: auto;
+	padding-left: 150px;
+	padding-right: 10px;
+	text-align: justify;
+}
+
+.container footer {
+	background-color: black;
+	color: white;
+	height: 40px;
+	text-align: center;
+	padding-top: 20px;
+    text-transform: lowercase;
+}
+</style>
+
+<body>
+    <div class="container">
+        <header>City Gallery</header>
+        <nav>
+            <ul>
+                <li>London</li>
+                <li>Paris</li>
+                <li>Tokyo</li>
+            </ul>
+        </nav>
+        <article>
+            <h2>London</h2>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Beatae aut, repellat quos delectus dolor ab temporibus accusantium nulla quae sit asperiores suscipit rerum harum voluptatibus quidem!</p>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis facilis rerum quae temporibus nam omnis aut vero nostrum facere quibusdam qui, iste deleniti dolores accusamus at dolore eum nihil vitae!</p>
+        </article>
+        <footer>Copyright &copy W3School.com</footer>
+    </div>
+</body>
+</html>
